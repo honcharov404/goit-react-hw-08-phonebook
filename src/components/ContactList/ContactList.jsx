@@ -9,12 +9,12 @@ const ContactList = ({ contacts, deleteContact }) => {
     <ul className={s.list}>
       {contacts?.length &&
         contacts.map(el => {
-          const { name, phone, id } = el || {};
+          const { name, number, id } = el || {};
           return (
             <ContactListItem
               key={id}
               name={name}
-              phone={phone}
+              phone={number}
               deleteContact={deleteContact}
               id={id}
             />
@@ -29,7 +29,7 @@ ContactList.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      phone: PropTypes.string.isRequired,
+      number: PropTypes.string.isRequired,
     })
   ).isRequired,
   deleteContact: PropTypes.func.isRequired,
