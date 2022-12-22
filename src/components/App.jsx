@@ -15,28 +15,28 @@ export const App = () => {
       <nav>
         <NavLink
           className={({ isActive }) => cn(s.navLink, { [s.active]: isActive })}
-          to="/contacts"
+          to="contacts"
         >
           Contacts
         </NavLink>
         <NavLink
           className={({ isActive }) => cn(s.navLink, { [s.active]: isActive })}
-          to="/register"
+          to="register"
         >
           Register
         </NavLink>
         <NavLink
           className={({ isActive }) => cn(s.navLink, { [s.active]: isActive })}
-          to="/login"
+          to="login"
         >
           Log In
         </NavLink>
       </nav>
       <Suspense>
         <Routes>
-          <Route path="/contacts" element={<LazyContacts />} />
-          <Route path="/register" element={<LazyRegister />} />
-          <Route path="/login" element={<LazyLogIn />} />
+          <Route path="contacts" element={<LazyContacts />} />
+          <Route path="register" element={<LazyRegister />} />
+          <Route path="login" element={<LazyLogIn />} />
         </Routes>
       </Suspense>
     </div>
