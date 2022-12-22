@@ -34,9 +34,9 @@ export const App = () => {
       </nav>
       <Suspense>
         <Routes>
-          <Route path="contacts" element={<LazyContacts />} />
-          <Route path="register" element={<LazyRegister />} />
-          <Route path="login" element={<LazyLogIn />} />
+          <Route path="/contacts" element={<LazyContacts />} />
+          <Route path="/register" element={<LazyRegister />} />
+          <Route path="/login" element={<LazyLogIn />} />
         </Routes>
       </Suspense>
     </div>
