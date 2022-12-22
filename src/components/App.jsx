@@ -15,19 +15,19 @@ export const App = () => {
       <nav>
         <NavLink
           className={({ isActive }) => cn(s.navLink, { [s.active]: isActive })}
-          to="contacts"
+          to="/contacts"
         >
           Contacts
         </NavLink>
         <NavLink
           className={({ isActive }) => cn(s.navLink, { [s.active]: isActive })}
-          to="register"
+          to="/register"
         >
           Register
         </NavLink>
         <NavLink
           className={({ isActive }) => cn(s.navLink, { [s.active]: isActive })}
-          to="login"
+          to="/login"
         >
           Log In
         </NavLink>
